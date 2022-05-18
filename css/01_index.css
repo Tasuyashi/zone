@@ -1,0 +1,14 @@
+.test{
+    background-color: blue;
+}
+
+.center{
+    background-color: yellowgreen;
+    font-size: 90px;
+}
+
+*{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
+}

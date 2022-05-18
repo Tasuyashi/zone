@@ -1,0 +1,56 @@
+*{
+   /* L'étoile oe asterique signifie qu'on selection tout le document, c'est un sélécteur universel */
+
+   text-align: right; /* aligne le texte à droite */
+}
+
+body{
+    background: #f5deb3; /* couleur de font */
+}
+
+header{
+    background-color: #900c3f;
+    color: white;/* couleur du texte */
+
+    height: 100px;/* hauteur fixée  à 100 pixels */
+}
+
+nav{
+    background-color: aquamarine;
+    height: 60px;
+}
+
+section{
+    background-color: blue;
+    height: 550px;
+    color: yellow;
+}
+
+article{
+    background-color: darkgoldenrod;
+    height: 66px;
+}
+
+footer{
+    background-color: fuchsia;
+    height: 75px;
+}
+
+nav, footer{ /* je sépare les différence balises à selectionner par de virgules */
+    color: lawngreen;
+    font-size: 25px;
+}
+/* Pour selectionner une class en css, j'utilise un point avant le nom que je lui ai donné */
+.jaune{
+    background-color: sienna;
+
+}
+/* Pour cibler lèid j'utilise un dièse #*/
+#noir{
+    background-color: tomato;
+    color:black;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    font-size: 25px;
+}

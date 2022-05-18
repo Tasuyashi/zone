@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires HTML</title>
+    <link rel="stylesheet" href="css/03_formulaire.css">
+</head>
+<body>
+    <!-- je déclare mon formulaire aves la balise form -->
+    <form action="">
+
+        <!-- deux manière de déclarer le label -->
+        <!--pseudo-->
+        <label for="pseudo">
+            <!--input dans label-->
+            Pseudonyme
+        </label>
+        <input type="text" name="pseudo" id="" placeholder="exemple" required>
+
+        <!--
+
+            L'id combiné à for permet de lier le label à l'input type précise le typr de donnée rércupérée, 
+            name sera utilisé en php pour récupérer la donnée, le placeholder contien le texte qui apparaît dans l'input 
+            required précise au navigateur que le chmps est à rensigner obligatoirement
+        -->
+        
+        <label for="mdp">
+            Mot de passe <span title="Le mot de passe peut contenir..."></span>
+        </label>
+        <input type="password" name="mdp" id="mdp" aria-placeholder="mot de passe" required>
+
+        <br>
+        <br>
+
+        <!--email-->
+     <label for="email">Email</label>
+        <input type="email" name="email" id="email" aria-placeholder="Votre mail" required>
+
+        
+        <input type="email" name="email" id="email" aria-placeholder="Votre mail">
+
+        <label for="Photo">Photo</label>
+        <input type="file" name="photo" id="photo">
+
+        <br>
+        <br>
+
+        <fieldset style="height: 450px;">
+            <legend>Choix Multiple</legend>
+            <!-- cases à chocher checkbox-->
+            <!-- plusieur choix -->
+        
+      
+
+        <label for="q1">Quelle destination choisissez-vous</label>
+        <p>
+            <input type="checkbox" name="reponse01" id="q1">Italie
+            <input type="checkbox" name="reponse02" id="q1">Japon
+            <input type="checkbox" name="reponse03" id="q1">DubaÏ
+        </p>
+
+        <br>
+        <!-- case à cocher radio-->
+
+        <input type="radio" id="q1" name="reponse" checked> En famille
+
+        <input type="radio" id="q2" name="reponse"> Entre amie
+
+        <input type="radio" id="q3" name="reponse"> Solo
+
+        <!-- un seul choix avec les bouton radio en force l'utilisation à choisir -->
+
+    </fieldset>
+        <br>
+
+        <label for="commentaire">commentaires</label>
+        <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+        <!-- rows=nombre de ligne - clos=nombre de colonnes / caractères-->
+
+        <br>
+            <input type="submit" name="inscription" value="Envoyer"> 
+            <!--bouton envoi du formulaire-->
+
+            <input type="reset" name="annuler" value="annuler"> 
+            <!--bouton pour vider le formulaire-->
+        <br>
+
+        <a href="https://developer.mozilla.org/fr/docs/web/HTML/Element/Input" targer="_blank">Petite documentation</a>
+
+        <br>
+
+        <a href="https://www.w3schools.com/html_" target="_blank">w3schools, les types d'input</a>
+    
+
+        </input>
+         
+    </form>
+    
+    
+</body>
+</html>

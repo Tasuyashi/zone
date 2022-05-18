@@ -1,0 +1,64 @@
+body{
+    margin:0 auto;
+    /*
+    margin: 0 auto 0 auto; => haut droite bas gauche 
+
+    margin:0;
+    margin: 0 auto 1; (gauche -> auto)
+    */
+    background-color: blue;
+}
+
+div{
+    width: 90%;
+    margin: 0 auto;
+    background-color: beige;
+}
+
+p{
+    background-color: turquoise;
+    /* propriété suivante à tester ! */
+    display: inline;
+}
+
+p span{ /* séléctionne les span contenu dans des p */
+    background-color: gold;
+}
+
+.boite{
+    height: 11vh;
+    width: 15vh ;
+    padding: 5vh;
+    background: url(../img/sushi-g5dcfc240d_1920\ \(1\).jpg);
+    background-repeat: no-repeat;
+    border: 5px double orchid;/* taille, style, couteur de la bordure */
+    margin: 2vh;
+    float: left;
+    /* effet flotant, permet de placer des balise côte à côte alore que le flux du web standard les éléments se placent les uns 
+    au-dessus des autres. */
+    transition: margin 0.5s;
+}
+
+/*https://outils-css.aliasdmc.fr/unites-de-longueurs-css.php
+
+  EM: Relative to the parent element
+
+  REM: Relative to the root element (HTML tag)
+
+  %: Relative to the parent element
+
+  VH: Relative to the viewport's height
+
+  VW: Relative to viewport's-width
+
+  */
+
+.boite:hover{
+      /* la pseudo-class : hover modifei un affichage au survol de la souris */
+      margin-top: 10vh
+}
+
+.clear{
+      clear: both;
+      /* supprime l'effet flottant */
+}

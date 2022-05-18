@@ -1,0 +1,73 @@
+body{
+    font-size: 25px;/*taille de police: 25 pixel*/
+}
+
+h1{
+    background-color: darkcyan;/* couleur de fond */
+    color: white; /* couleur du texte*/
+}
+
+section p{
+    color: red; /* tout les <p> à l'intérieure de la balise <section> */
+}
+
+section p:first-child{
+    color: forestgreen; /* 1er p dans section*/
+}
+
+section p:last-child{
+  color: blue; /* dernier p dans section */
+}
+
+section p:nth-child(even){
+    color: goldenrod; /* numéro de l'enfant *//*les paires */
+}
+
+section p:nth-child(odd){
+    color: blueviolet; /* numéro de l'enfant *//*les impairs */
+}
+
+section p:nth-child(1), section p:nth-child(5){/* deux selecteur séparés par une virgule les numero 3 et 10 */
+    color: blue;
+}
+
+.zone1{ /*class donc avant son nom je mets un . */
+    color: ;
+}
+
+.zone2{
+    color: lavenderblush;
+
+}
+
+.lime{
+    color: rebeccapurple;
+}
+
+#zone3{/* ID donc avant sont nom je mets un # */
+    background-color: olive;
+}
+
+#zone3::before{ /*rafouter contenu avant l'id zone3*/
+    content: "rajoute avant";
+/* content est obligatoire, les contenus ne s'affiche pas pas dans la HTML => attention accsibilité, on peut le laisser vide
+    on peut même rajouter des attributs à une balise attr(title) */
+    background-color: brown;   
+}
+
+#zone3::after{
+    content=" rajouté après";
+}
+
+li:nth-of-type(2){
+    background-color: aquamarine;
+    color: black;
+}
+
+.zone4 span{
+    font-size: 40px;
+}
+
+/* séléctionnez le span qui n'a pas de class et seul */
+
+span
