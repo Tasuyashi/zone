@@ -1,19 +1,18 @@
 #conteneur{
-    height: 600px;
+
     margin: 0 auto;
-    width: 800;
+    width: 800px;
 }
 
 header{
     background: #ff5555;
     width: 800px;
-    margin: 70px;
     height: 70px;
     line-height: 70px;
-    text-align: center;
+    
 }
 
-.gauche, .droite{
+.gauche, .droit{
     background: #5585ff;
     width: 150px;
     height: 530px;
@@ -27,6 +26,7 @@ header{
     height: 450px;
     line-height: 530px;
     width: 500px;
+
     
 }
 
@@ -47,6 +47,6 @@ header{
     width: 500px;
 }
 
-.clear{
+.bas{
     clear: both;
 }

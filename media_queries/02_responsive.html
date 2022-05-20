@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les media queriers</title>
+    <link rel="stylesheet" href="css/02_responsive.css">
+</head>
+<body>
+    <!--Les medias queries permettent de réorganiser les éléments dans la page pour avoir un affichage claire et visible de tous les élément-->
+
+    <!-- Les média queries permettent de définir une fourchette au delas de laquelle L'affichage doit être différent -->
+
+    <!-- Les différents taille d'écran possible (mobile<768px) (table<768px et < 992px desktop>=992px et desktop >=1200px) -->
+
+    <!-- le responsive design web c'est de creer un design qui s'adapte sur n'importe quel taille d'écran qui connecte sur ce site ou bien sur l'application-->
+
+    <!-- Les media queries sont nouveaux de css3, on va pas ajouter d'autre propriétés css, mois plutot on va appliquer le css avec certains régles et conditions-->
+
+    <!--
+        le syntaxe general de media queries:
+        @media screen and(max-width:768px){//le debut de la fauchette}
+
+        h1{
+
+        }
+        p{
+            
+        }
+
+        // ici j'ajoute le css pour réorganiser al page, je change la taille (width), la disposition des elements, supprimer (ou bien diminuer au max les margins), changer la taille de police (le text), on peut même cacher des parties (qui sont moins importantes que d'autre)
+    }// la fin de la fourchette
+    @media screen ou bien print (impression) ou bien all(screen et print)
+    -->
+
+    <div class="container">
+        <header>
+            Haut du site
+        </header>
+
+        <!-- les navigation-->
+        <nav>
+            <a href="">Accueil</a>
+            <a href="">Actualités</a>
+            <a href="">Boutique</a>
+            <a href="">Panier</a>
+            <a href="">FAQ</a>
+        </nav>
+        <main>
+            <section>
+                <div class="zone1">zone1</div>
+                <div class="zone2">zone2</div>
+                <div class="zone3">zone3</div>
+                <div class="zone4">zone4</div>
+            </section>
+        </main>
+        <footer>
+            le bas du site
+        </footer>
+    </div>
+</body>
+</html>
